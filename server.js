@@ -56,6 +56,62 @@ app.post("/", (req, res) => {
   res.send(`
     <html>
       <head>
+        <title>Ideia Premium</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          body {
+            background:#020617;
+            color:white;
+            font-family:Arial;
+            padding:20px;
+            text-align:center;
+          }
+          .box {
+            max-width:500px;
+            margin:auto;
+            background:#1e293b;
+            padding:20px;
+            border-radius:10px;
+          }
+          a {
+            display:block;
+            margin-top:20px;
+            padding:15px;
+            background:#22c55e;
+            color:black;
+            text-decoration:none;
+            border-radius:8px;
+            font-weight:bold;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="box">
+          <h2>💡 Ideia sobre: ${tema}</h2>
+          <p>
+            Criar um microproduto digital focado em <b>${tema}</b>,
+            resolvendo um problema específico com conteúdo simples.
+          </p>
+
+          <p><b>🔒 Conteúdo completo disponível apenas para assinantes.</b></p>
+
+          <a href="COLE_AQUI_SEU_LINK_DO_MERCADO_PAGO" target="_blank">
+            🔓 Desbloquear Ideias Premium (R$19,90/mês)
+          </a>
+
+          <br>
+          <a href="/" style="background:#334155;color:white">
+            ← Voltar
+          </a>
+        </div>
+      </body>
+    </html>
+  `);
+});
+
+  res.send(`
+    <html>
+      <head>
         <title>Resultado</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
       </head>
